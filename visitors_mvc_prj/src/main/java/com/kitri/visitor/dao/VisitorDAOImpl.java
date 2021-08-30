@@ -14,19 +14,7 @@ import com.kitri.visitor.vo.VisitorVO;
 //DAO는 Repository 어노테이션을 사용하자
 @Repository
 public class VisitorDAOImpl implements VisitorDAO{
-
-	public void closeAll(Connection conn, PreparedStatement pstmt, ResultSet rs) {
-		try {
-			if(rs!=null && !rs.isClosed())
-				rs.close();
-			if(pstmt!=null && !pstmt.isClosed())
-				pstmt.close();
-			if(conn!=null && !conn.isClosed())
-				conn.close();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-	}
+	
 	
 	@Override
 	public List<VisitorVO> selectVisitors() {
@@ -81,6 +69,21 @@ public class VisitorDAOImpl implements VisitorDAO{
 		}
 		return result;
 	}
+
+	public void closeAll(Connection conn, PreparedStatement pstmt, ResultSet rs) {
+		try {
+			if(rs!=null && !rs.isClosed())
+				rs.close();
+			if(pstmt!=null && !pstmt.isClosed())
+				pstmt.close();
+			if(conn!=null && !conn.isClosed())
+				conn.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	
 
 	@Override
 	public int updateVisitor(VisitorVO vvo) {
