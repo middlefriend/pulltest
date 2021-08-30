@@ -19,18 +19,13 @@ public class VisitorVO {
 	}
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
-	}
-	public String getContent() {
-		return content;
-	}
-	public void setContent(String content) {
-		this.content = content;
+	
 	}
 	public Date getRegdate() {
 		return regdate;
 	}
-	public void setRegdate(Date regdate) {
-		this.regdate = regdate;
+	public void test33333(Date regdate) {
+		this.regdate = regdate;333
 	}
 	
 }
