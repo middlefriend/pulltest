@@ -14,7 +14,7 @@
 	<logger name="com.kitri.visitor">
 		<level value="info" />
 	</logger>
-	
+	test232323
 	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
 		<level value="info" />
