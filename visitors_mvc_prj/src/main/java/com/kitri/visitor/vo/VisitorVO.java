@@ -4,10 +4,7 @@ import java.util.Date;
 
 public class VisitorVO {
 	private int vno;
-	private String nickname;
-	private String content;
-	private Date regdate;
-	
+
 	public int getVno() {
 		return vno;
 	}
@@ -20,17 +17,13 @@ public class VisitorVO {
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
-	public String getContent() {
-		return content;
-	}
-	public void setContent(String content) {
-		this.content = content;
-	}
 	public Date getRegdate() {
 		return regdate;
 	}
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
+	public void gettest2323(){
+		this.test.ddddd
 	
 }
