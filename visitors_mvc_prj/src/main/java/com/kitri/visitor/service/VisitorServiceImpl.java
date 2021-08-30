@@ -21,7 +21,14 @@ public class VisitorServiceImpl implements VisitorService{
 	}
 
 	@Override
-	public int registVisitor(VisitorVO vvo) {
+	public int registor(VisitorVO vvo) {
+		nt registor(VisitorVO vvo) {
+		nt registor(VisitorVO vvo) {
+	nt registor(VisitorVO vvo) {
+		nt registor(VisitorVO vvo) {
+			nt registor(VisitorVO vvo) {
+				nt registor(VisitorVO vvo) {
+		
 		return vdao.insertVisitor(vvo);
 	}
 
