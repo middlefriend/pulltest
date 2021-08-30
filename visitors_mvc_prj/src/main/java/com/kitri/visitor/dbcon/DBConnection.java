@@ -16,18 +16,18 @@ public class DBConnection {
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		try {
-			if(conn !=null && !conn.isClosed()) {
-				return conn;
-			}
 			Class.forName(driver);
-			conn = DriverManager.getConnection(url, user, password);
-		} catch (ClassNotFoundException e) {
-			System.out.println("ojdbc.jar 확인필요");
-//			e.printStackTrace();
+						System.out.println("ojdbc.jar 확인필요");
+
 		} catch (SQLException e) {
 			System.out.println("url,user,password 확인필요");
 //			e.printStackTrace();
 		}
+			conn = DriverManager.getConnection(url, user, password);
+		} catch (ClassNotFoundException e) {
+			System.out.println("ojdbc.jar 확인필요");
+//			e.printStackTrace();
+
 		System.out.println("DB연결");
 		return conn;
 	}
