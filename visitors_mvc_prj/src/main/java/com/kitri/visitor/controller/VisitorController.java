@@ -26,20 +26,15 @@ public class VisitorController {
 	}
 	
 	@RequestMapping("/session")
+		@RequestMapping("/visitor")
+
 	public String session(String nickname,HttpSession session) {
 		session.setAttribute("nickname", nickname);
-		
-		return "redirect:/visitor";
-	}
-
-	@RequestMapping("/visitor")
-	public String visitor(Model model) {
 		List<VisitorVO> vlist = vservice.searchVisitors();
 		model.addAttribute("vlist",vlist);
 		
-		return "visitor";
-	}
-	
+		return "redirect:/visitor";
+	}	
 	@RequestMapping("/regist")
 	public String regist(VisitorVO vvo) {
 		int result = vservice.registVisitor(vvo);
