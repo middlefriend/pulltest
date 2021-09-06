@@ -20,7 +20,7 @@
 		<level value="info" />
 	</logger>
 	
-	<logger name="org.springframework.beans">
+	<logger name="org.asdasdsadas.beans">
 		<level value="info" />
 	</logger>
 	
